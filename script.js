@@ -58,3 +58,4 @@ async function getProducts(amount_products) {
         loader.classList.add("loader-hide");
     }
 }
+
