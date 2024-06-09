@@ -252,17 +252,46 @@ body {
 
 
 }
+
+.sponsor-item {
+    display: flex;
+    flex-direction: column;
+    color: #1493a7;
+
+    cursor: pointer;
+    align-items: center;
+    gap: 1px; 
+    justify-content: center;
+    margin: 1px;
+
+}
+
 .sponsor {
-    height: 90px; /* Высота изображений спонсоров */
+    height: 80px;
     width: auto;
-    margin: 0 10px; /* Отступы слева и справа */
-    border: 1px solid #130202;
-    padding: 5px;
-    background-color: rgb(7, 24, 89);
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    color: #120501;
+  
+    border: 1px solid black;
+    padding: 2px 2px;
+    border-radius: 30px; /* Радикально закругленные углы */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    background-color: rgba(48, 36, 223, 0.8); /* Прозрачный белый фон */
+    transition: transform 0.3s ease; /* Плавный переход */
 
     position: relative; /* Для абсолютного позиционирования loader */
 
-    z-index: 1; /* Для того чтобы loader был поверх спонсоров */
+    z-index: 1; /* Для того чтобы карточка была поверх всех */
 
     cursor: pointer;
 
@@ -271,10 +300,38 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
     border-radius: 20px; /* Радиус закругления углов */
 
     
 
+
+}
+.footer-title {
+    font-size: 20px;
+    font-family: 'cormorant garamond', serif;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень для текста */
+
+    text-align: center;
+
+    color: rgb(65, 190, 212);
+
+    text-decoration: none;
+
+    transition: transform 0.3s ease; /* Плавный переход */
+
+    position: relative; /* Для абсолютного позиционирования loader */
+
+    z-index: 1; /* Для того чтобы loader был поверх шапки */
+
+    cursor: pointer;
+
+    user-select: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;    
 
 }
 
