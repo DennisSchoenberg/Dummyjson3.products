@@ -117,7 +117,7 @@ body {
     width: 180px;
     position: absolute;
     
-    top: 5%;
+    top: auto;
 
     right: 10px;
 
@@ -249,6 +249,31 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;    
+
+
+}
+.sponsor {
+    height: 90px; /* Высота изображений спонсоров */
+    width: auto;
+    margin: 0 10px; /* Отступы слева и справа */
+    border: 1px solid #130202;
+    padding: 5px;
+    background-color: rgb(7, 24, 89);
+
+    position: relative; /* Для абсолютного позиционирования loader */
+
+    z-index: 1; /* Для того чтобы loader был поверх спонсоров */
+
+    cursor: pointer;
+
+    user-select: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px; /* Радиус закругления углов */
+
+    
 
 
 }
